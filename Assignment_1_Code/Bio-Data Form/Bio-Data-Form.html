@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bio Data</title>
+    <style>
+        fieldset{
+            background-color:#eeeeee;
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="POST">
+    <h1>My Bio Data</h1>
+        <fieldset>
+            <legend> Personal Information </legend>
+            <div id="groove">
+                <div>
+                    <tr> FirstName: <input type="text" placeholder="First Name" name="First Name"></tr>
+                    <tr> LastName:  <input type="text" placeholder="Last Name" name="Last Name"></tr>
+                </div>
+                
+                <br>
+                    <tr> Male: <input type="radio" name="gender" > </tr>
+                    <tr> Female: <input type="radio" name="gender"> </tr>
+                    <tr> Other: <input type="radio" name="gender"> </tr>
+                </br>
+
+                <br> Date of Birth : <input type="date"></br>
+                <br> E-Mail : <input type="email" placeholder="Enter your E-Mail"></input></br> 
+                <br> Phone <input type="tel" maxlength="10" placeholder="+91"></input></br>
+                <br> Height <input type="number" placeholder="Height in Feet"></input></br>
+            </div> 
+        </fieldset>
+        <fieldset>
+            <legend> Education </legend>
+                
+                    <br> School Name : <input type="text" placeholder="School Name"></br>
+                    <br> Class : <input type="text" placeholder="Enter Class"></br>
+                    <!--Static Drop down using select  -->
+                    <br> Stream :
+                    <select id="Stream" name="Stream">
+                        <option value="Stream"> Select Stream</option>
+                        <option value="Science">Science</option>
+                        <option value="Commerce">Commerce</option>
+                        <option value="Arts">Arts</option>
+                    </select>
+                    </br>
+                    <!--Static Drop down using select  -->
+                    <br> Marksheet : <input Choose File type="file"></br>
+                    <br><a href="Repository"> Github link</a></br>
+        </fieldset>      
+    </form>
+    <br><input type="submit"></br>
+</body>
+</html>
