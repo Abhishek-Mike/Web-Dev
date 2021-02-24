@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bio Data</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        fieldset{
+            background-color:#eeeeee;
+            color: rgb(21, 15, 44);
+            
+        }
+        #brain{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="POST">
+    <h1>My Bio Data</h1>
+        <fieldset>
+            <legend> Personal Information </legend>
+            <div id="groove">
+                <div>
+                    <tr> FirstName: <input type="text" placeholder="First Name" name="First Name"></tr>
+                    <tr> LastName:  <input type="text" placeholder="Last Name" name="Last Name"></tr>
+                </div>
+                
+                <br>
+                    <tr> Male: <input type="radio" name="gender" > </tr>
+                    <tr> Female: <input type="radio" name="gender"> </tr>
+                    <tr> Other: <input type="radio" name="gender"> </tr>
+                </br>
+
+                <br> Date of Birth : <input type="date"></br>
+                <br> E-Mail : <input type="email" placeholder="Enter your E-Mail"></input></br> 
+                <br> Phone <input type="tel" maxlength="10" placeholder="+91"></input></br>
+                <br> Height <input type="number" placeholder="Height in Feet"></input></br>
+            </div> 
+        </fieldset>
+        <fieldset>
+            <legend> Education </legend>
+                
+                    <br> School Name : <input type="text" placeholder="School Name"></br>
+                    <br> Class : <input type="text" placeholder="Enter Class"></br>
+                    <!--Static Drop down using select  -->
+                    <br> Stream :
+                    <select id="Stream" name="Stream">
+                        <option value="Stream"> Select Stream</option>
+                        <option value="Science">Science</option>
+                        <option value="Commerce">Commerce</option>
+                        <option value="Arts">Arts</option>
+                    </select>
+                    </br>
+                    <!--Static Drop down using select  -->
+                    <br> Marksheet : <input Choose File type="file"></br>
+        </fieldset>      
+    </form>
+    <br><input type="submit"></br> 
+    <div>
+        <tr><a href="https://github.com/Abhishek-Mike/Web-Dev" target="-blank"> Github link</a></tr>
+        <tr><i class="fa fa-github" style="font-size:45px"></i></tr>
+        <tr id="brain"><a href="../Time Table/Time Table.html" target="-blank">Check out the Time Table</a></tr>
+    </div>   
+</body>
+</html>
