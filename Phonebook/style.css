@@ -1,0 +1,46 @@
+h2{
+  background-color:magenta;
+  color:white;
+  border-radius: 85%;
+  text-align: center;
+  font-size: 2rem;
+  height: 50px; width: 330px;
+  position: fixed;
+  top: 30px;
+  left: 600px;
+}
+
+div {
+  background-color: #219ebc;
+  border: 2px solid black;
+  border-radius: 55%;
+  margin: 10px;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+div {
+  position: sticky;
+  top: 10px;
+}
+
+li::before {
+  /* content: "\2706"; */
+  content: "\☎      ";
+  color:greenyellow;
+}
+
+body{
+  background-color:black;
+}
+
+li{
+  font-size: 1.5em;
+  text-align: center;
+  color: cornsilk;
+}
+
+
+.list{
+  text-align: center;
+}
