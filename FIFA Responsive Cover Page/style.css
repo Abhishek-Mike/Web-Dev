@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background-color: #14213d;
+  font-size: 1.8rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  min-height: 70px;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  width: 390px;
+}
+
+/*responsive & after shrinking screen size*/
+@media screen and (max-width: 530px) {
+  nav,
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*background image */
+#main-img {
+  height: 70vh;
+  width: 100vw;
+  border: 1px solid #ccc;
+  background-color: black;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat;
+  max-width: 100%;
+  /*transition: border-radius 1s 2s ease-in, background-color 2s ease-out; */
+  transition: 5s;
+  animation: animate;
+  animation-direction: alternate-reverse;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes animate{
+  0%{
+    background-image: url(./images/photo-1506626637585-0802df0d0269.jpg);
+  }
+  20%{
+    background-image: url(./images/TELEMMGLPICT000167667228_trans_NvBQzQNjv4BqF9BD_fYQB0teZOF4IslN2Ui6L4XAoX9KJ12arlP6KhI.jpeg);
+  }
+  30%{
+    background-image: url(./images/anfield.png);
+  }
+  40%{
+    background-image: url(./images/frenchfootballteam2018_02.jpg);
+  }
+  50%{
+    background-image: url(./images/cristiano_ronaldo_lifts_the_henri_delaunay_trophy_as_portugal_win_uefa_euro_2016.webp);
+  }
+  60%{
+    background-image: url(./images/ijc2eusflippzfho5mnn.jpg);
+  }
+  80%{
+    background-image: url(./images/photo-1506626637585-0802df0d0269.jpg);
+  }
+  100%{
+    background-image: url(./images/reus.jpg);
+  }
+}
+
+#main-img:hover{
+  border-radius: 40%;
+  background-image: url(./images/Liverpool.jpg);
+  cursor: pointer;
+}
+/*My fifa fav player cards */
+.cards {
+  width: 100vw;
+  margin-left: 25px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#messi{
+  width: 15vw;
+  margin: 5px ;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article{
+  transition: all 0.2s;
+  box-shadow: 2px 2px 3px rgba(104, 104, 104);
+}
+article:hover{
+  transform: scale(1.4);
+  cursor: pointer;
+}
+
+footer{ 
+  background-color: #337ab7 ;
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  min-height: 300px;
+  width: 100vw;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+}
+
+@media screen and (max-width: 530px) {
+  footer,img,a,
+  ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+#fa{
+  margin-top: 260px;
+  font-size: small;
+  margin-left: -590px;
+
+}
+
+#footimg{
+    max-width: 15%;
+    margin-left: -100px;
+}
+
+#down{
+  margin-top: -100px;
+  margin-right: 110px;
+}
