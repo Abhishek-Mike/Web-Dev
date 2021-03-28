@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="addTask">
+                <input type="text" id="inp" placeholder="What'ch you wanna do??">
+                <button id="add">Add</button>
+       </div>
+
+        <ol class="pending">
+            <h3>Pending</h3>
+            <li> List of Tasks
+                <button><i class="fa fa-check white-color"></i></button>
+                <button><i class="fa fa-trash white-color"></i></button>
+               
+            </li>
+        </ol>
+
+        <ol class="done">
+            <h3>Completed</h3>
+            <li> List of Tasks
+                <button><i class="fa fa-check white-color"></i></button>
+                <button><i class="fa fa-trash white-color"></i></button>
+            </li>
+        </ol>
+
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
