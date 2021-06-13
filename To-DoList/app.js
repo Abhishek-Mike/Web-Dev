@@ -5,7 +5,7 @@ btn.addEventListener('click', addList); // btn.onclick = function (e) can be use
 input.addEventListener('keyup', (e)=>{
     // to enable enter to list input text from user
     if(e.keyCode === 13){
-        addList(e);
+        addList(e);          // calls the addList function
     };
 })
 
